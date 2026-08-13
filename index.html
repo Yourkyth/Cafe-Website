@@ -1,571 +1,518 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>KYTH CAFE</title>
-<link rel="stylesheet" href="style.css">
-    
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- ================= NAVIGATION ================= -->
 
-<!-- ================= NAVIGATION ================= -->
+    <nav>
+        <div class="logo">
+            Kyth <span>Cafe</span>
+        </div>
 
-<nav>
-
-    <div class="logo">
-        Kyth <span>Cafe</span>
-    </div>
-
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-
-</nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
 
-<!-- ================= HERO ================= -->
+    <!-- ================= HERO ================= -->
 
-<section class="hero" id="home">
+    <section class="hero" id="home">
 
-    <div class="hero-content">
+        <div class="hero-content">
 
-        <h1>Good Food.<br>Good Moments.</h1>
-
-        <p>
-            Fresh ingredients, delicious recipes,
-            and unforgettable dining experiences.
-        </p>
-
-        <a href="#menu" class="btn primary">
-            View Menu
-        </a>
-
-        <a href="#contact" class="btn secondary">
-            Contact Us
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- ================= ABOUT ================= -->
-
-<section>
-
-    <div class="about" id="about">
-
-        <img
-            src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80"
-            alt="Restaurant interior"
-        >
-
-        <div class="about-text">
-
-            <h2>Welcome to Kyth Cafe</h2>
+            <h1>
+                Good Food.<br>
+                Good Moments.
+            </h1>
 
             <p>
-                Kyth Cafe is a family-owned restaurant dedicated
-                to serving delicious food made with fresh ingredients.
+                Fresh ingredients, delicious recipes,
+                and unforgettable dining experiences.
             </p>
 
-            <p>
-                Whether you're enjoying dinner with your family,
-                meeting friends, or celebrating a special occasion,
-                we're here to make your experience memorable.
-            </p>
+            <a href="#menu" class="btn primary">
+                View Menu
+            </a>
 
-            <a href="#contact" class="btn primary">
-                Visit Us
+            <a href="#contact" class="btn secondary">
+                Contact Us
             </a>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- ================= MENU ================= -->
+    <!-- ================= ABOUT ================= -->
 
-<section class="menu" id="menu">
+    <section>
 
-    <div class="section-title">
+        <div class="about" id="about">
 
-        <h2>Our Menu</h2>
+            <img
+                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80"
+                alt="Kyth Cafe restaurant interior"
+            >
+
+            <div class="about-text">
+
+                <h2>Welcome to Kyth Cafe</h2>
+
+                <p>
+                    Kyth Cafe is a family-owned restaurant dedicated
+                    to serving delicious food made with fresh ingredients.
+                </p>
+
+                <p>
+                    Whether you're enjoying dinner with your family,
+                    meeting friends, or celebrating a special occasion,
+                    we're here to make your experience memorable.
+                </p>
+
+                <a href="#contact" class="btn primary">
+                    Visit Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MENU ================= -->
+
+    <section class="menu" id="menu">
+
+        <div class="section-title">
+
+            <h2>Our Menu</h2>
+
+            <p>
+                Customer favorites made fresh every day.
+            </p>
+
+        </div>
+
+
+        <div class="menu-grid">
+
+
+            <!-- FOOD 1 -->
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80"
+                    alt="Classic Pizza"
+                >
+
+                <div class="food-info">
+
+                    <h3>Classic Pizza</h3>
+
+                    <p>
+                        Fresh tomato sauce, mozzarella,
+                        and your favorite toppings.
+                    </p>
+
+                    <div class="price">
+                        ₱299
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FOOD 2 -->
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=700&q=80"
+                    alt="Creamy Pasta"
+                >
+
+                <div class="food-info">
+
+                    <h3>Creamy Pasta</h3>
+
+                    <p>
+                        Creamy homemade sauce with
+                        herbs and parmesan.
+                    </p>
+
+                    <div class="price">
+                        ₱249
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FOOD 3 -->
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=80"
+                    alt="Garden Salad"
+                >
+
+                <div class="food-info">
+
+                    <h3>Garden Salad</h3>
+
+                    <p>
+                        Fresh vegetables with our
+                        signature dressing.
+                    </p>
+
+                    <div class="price">
+                        ₱189
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FOOD 4 -->
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"
+                    alt="Classic Burger"
+                >
+
+                <div class="food-info">
+
+                    <h3>Classic Burger</h3>
+
+                    <p>
+                        Juicy beef patty, cheese,
+                        vegetables, and special sauce.
+                    </p>
+
+                    <div class="price">
+                        ₱229
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FOOD 5 -->
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=700&q=80"
+                    alt="Grilled Chicken"
+                >
+
+                <div class="food-info">
+
+                    <h3>Grilled Chicken</h3>
+
+                    <p>
+                        Tender grilled chicken served
+                        with vegetables and rice.
+                    </p>
+
+                    <div class="price">
+                        ₱279
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FOOD 6 -->
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80"
+                    alt="Sweet Dessert"
+                >
+
+                <div class="food-info">
+
+                    <h3>Sweet Dessert</h3>
+
+                    <p>
+                        A delicious dessert to finish
+                        your dining experience.
+                    </p>
+
+                    <div class="price">
+                        ₱149
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FOOD 7 -->
+
+            <div class="food-card">
+
+                <img
+                    src="i1.jpg"
+                    alt="Special Chicken Dish"
+                >
+
+                <div class="food-info">
+
+                    <h3>Special Chicken</h3>
+
+                    <p>
+                        Tender grilled chicken served
+                        with vegetables and rice.
+                    </p>
+
+                    <div class="price">
+                        ₱279
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= OFFER ================= -->
+
+    <section class="offer">
+
+        <h2>Special Offer</h2>
 
         <p>
-            Customer favorites made fresh every day.
+            Get 10% OFF when you order three or more main dishes.
         </p>
 
-    </div>
+        <a href="#contact" class="btn primary">
+            Order Now
+        </a>
+
+    </section>
 
 
-    <div class="menu-grid">
+    <!-- ================= GALLERY ================= -->
 
+    <section id="gallery">
 
-        <!-- FOOD 1 -->
+        <div class="section-title">
 
-        <div class="food-card">
+            <h2>Our Gallery</h2>
 
-            <img
-                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80"
-                alt="Pizza"
-            >
-
-            <div class="food-info">
-
-                <h3>Classic Pizza</h3>
-
-                <p>
-                    Fresh tomato sauce, mozzarella,
-                    and your favorite toppings.
-                </p>
-
-                <div class="price">
-                    ₱299
-                </div>
-
-            </div>
+            <p>
+                Take a look at our food and restaurant.
+            </p>
 
         </div>
 
 
-        <!-- FOOD 2 -->
-
-        <div class="food-card">
+        <div class="gallery">
 
             <img
-                src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=700&q=80"
-                alt="Pasta"
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
+                alt="Restaurant interior"
             >
 
-            <div class="food-info">
-
-                <h3>Creamy Pasta</h3>
-
-                <p>
-                    Creamy homemade sauce with
-                    herbs and parmesan.
-                </p>
-
-                <div class="price">
-                    ₱249
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- FOOD 3 -->
-
-        <div class="food-card">
+            <img
+                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
+                alt="Restaurant food"
+            >
 
             <img
-                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=80"
+                src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80"
+                alt="Fresh food"
+            >
+
+            <img
+                src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=800&q=80"
                 alt="Healthy food"
             >
 
-            <div class="food-info">
+            <img
+                src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=800&q=80"
+                alt="Restaurant meal"
+            >
 
-                <h3>Garden Salad</h3>
+            <img
+                src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&q=80"
+                alt="Restaurant dish"
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RESTAURANT INFO ================= -->
+
+    <section class="info">
+
+        <div class="info-grid">
+
+
+            <!-- OPENING HOURS -->
+
+            <div class="info-card">
+
+                <div class="icon">🕐</div>
+
+                <h3>Opening Hours</h3>
 
                 <p>
-                    Fresh vegetables with our
-                    signature dressing.
+                    Monday - Sunday<br>
+                    10:00 AM - 10:00 PM
                 </p>
 
-                <div class="price">
-                    ₱189
-                </div>
+            </div>
+
+
+            <!-- LOCATION -->
+
+            <div class="info-card">
+
+                <div class="icon">📍</div>
+
+                <h3>Location</h3>
+
+                <p>
+                    Polomolok, South Cotabato<br>
+                    Philippines
+                </p>
 
             </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="info-card">
+
+                <div class="icon">📞</div>
+
+                <h3>Contact</h3>
+
+                <p>
+                    +63 928 406 7309<br>
+                    kythkythwinlietberinagonzaga@gmail.com
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact" id="contact">
+
+        <div class="section-title">
+
+            <h2>
+                Ready to <span>Order?</span>
+            </h2>
+
+            <p>
+                Contact us today for reservations,
+                orders, and inquiries.
+            </p>
 
         </div>
 
 
-        <!-- FOOD 4 -->
+        <div class="contact-buttons">
 
-        <div class="food-card">
+            <!-- CALL -->
 
-            <img
-                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"
-                alt="Burger"
+            <a
+                href="tel:+639284067309"
+                class="btn primary"
             >
+                📞 Call Us
+            </a>
 
-            <div class="food-info">
 
-                <h3>Classic Burger</h3>
+            <!-- MESSENGER -->
 
-                <p>
-                    Juicy beef patty, cheese,
-                    vegetables, and special sauce.
-                </p>
+            <a
+                href="https://m.me/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn primary"
+            >
+                💬 Messenger
+            </a>
 
-                <div class="price">
-                    ₱229
-                </div>
 
-            </div>
+            <!-- GOOGLE MAPS -->
+
+            <a
+                href="https://maps.google.com/?q=Polomolok+South+Cotabato"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn secondary"
+            >
+                📍 Find Us
+            </a>
 
         </div>
 
+    </section>
 
-        <!-- FOOD 5 -->
 
-        <div class="food-card">
+    <!-- ================= FOOTER ================= -->
 
-            <img
-                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=700&q=80"
-                alt="Chicken"
-            >
+    <footer>
 
-            <div class="food-info">
-
-                <h3>Grilled Chicken</h3>
-
-                <p>
-                    Tender grilled chicken served
-                    with vegetables and rice.
-                </p>
-
-                <div class="price">
-                    ₱279
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- FOOD 6 -->
-
-        <div class="food-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80"
-                alt="Dessert"
-            >
-
-            <div class="food-info">
-
-                <h3>Sweet Dessert</h3>
-
-                <p>
-                    A delicious dessert to finish
-                    your dining experience.
-                </p>
-
-                <div class="price">
-                    ₱149
-                </div>
-
-            </div>
-
-        </div>
-         <!-- FOOD 6 -->
-
-        <div class="food-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80"
-                alt="Dessert"
-            >
-
-            <div class="food-info">
-
-                <h3>Sweet Dessert</h3>
-
-                <p>
-                    A delicious dessert to finish
-                    your dining experience.
-                </p>
-
-                <div class="price">
-                    ₱149
-                </div>
-
-            </div>
-
-        </div> <!-- FOOD 6 -->
-
-        <div class="food-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80"
-                alt="Dessert"
-            >
-
-            <div class="food-info">
-
-                <h3>Sweet Dessert</h3>
-
-                <p>
-                    A delicious dessert to finish
-                    your dining experience.
-                </p>
-
-                <div class="price">
-                    ₱149
-                </div>
-
-            </div>
-
-        </div> <!-- FOOD 6 -->
-
-        <div class="food-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80"
-                alt="Dessert"
-            >
-
-            <div class="food-info">
-
-                <h3>Sweet Dessert</h3>
-
-                <p>
-                    A delicious dessert to finish
-                    your dining experience.
-                </p>
-
-                <div class="price">
-                    ₱149
-                </div>
-
-            </div>
-
-        </div>
-        <!-- FOOD 7 -->
-        <div class="food-card">
-
-            <img
-                src="i1.jpg"
-                alt="Chicken"
-            >
-
-            <div class="food-info">
-
-                <h3>Grilled Chicken</h3>
-
-                <p>
-                    Tender grilled chicken served
-                    with vegetables and rice.
-                </p>
-
-                <div class="price">
-                    ₱279
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= OFFER ================= -->
-
-<section class="offer">
-
-    <h2>Special Offer</h2>
-
-    <p>
-        Get 10% OFF when you order three or more main dishes.
-    </p>
-
-    <a href="#contact" class="btn primary">
-        Order Now
-    </a>
-
-</section>
-
-
-<!-- ================= GALLERY ================= -->
-
-<section id="gallery">
-
-    <div class="section-title">
-
-        <h2>Our Gallery</h2>
+        <h3>Kyth Cafe</h3>
 
         <p>
-            Take a look at our food and restaurant.
+            Delicious food. Great moments.
         </p>
 
-    </div>
-
-
-    <div class="gallery">
-
-        <img
-            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
-            alt="Restaurant"
-        >
-
-        <img
-            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
-            alt="Food"
-        >
-
-        <img
-            src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80"
-            alt="Food"
-        >
-
-        <img
-            src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=800&q=80"
-            alt="Healthy food"
-        >
-
-        <img
-            src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=800&q=80"
-            alt="Restaurant meal"
-        >
-
-        <img
-            src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&q=80"
-            alt="Restaurant food"
-        >
-
-    </div>
-
-</section>
-
-
-<!-- ================= RESTAURANT INFO ================= -->
-
-<section class="info">
-
-    <div class="info-grid">
-
-
-        <div class="info-card">
-
-            <div class="icon">🕐</div>
-
-            <h3>Opening Hours</h3>
-
-            <p>
-                Monday - Sunday<br>
-                10:00 AM - 10:00 PM
-            </p>
-
-        </div>
-
-
-        <div class="info-card">
-
-            <div class="icon">📍</div>
-
-            <h3>Location</h3>
-
-            <p>
-                Polomolok, South Cotabato<br>
-                Philippines
-            </p>
-
-        </div>
-
-
-        <div class="info-card">
-
-            <div class="icon">📞</div>
-
-            <h3>Contact</h3>
-
-            <p>
-                +63 928 406  7309<br>
-                kythkythwinlietberinagonzaga@gmail.com
-            </p>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- ================= CONTACT ================= -->
-
-<section class="contact" id="contact">
-
-    <div class="section-title">
-
-        <h2>Ready to <span>Order?</span></h2>
+        <br>
 
         <p>
-            Contact us today for reservations,
-            orders, and inquiries.
+            © 2026 Kyth Cafe. All Rights Reserved.
         </p>
 
-    </div>
-
-
-    <div class="contact-buttons">
-
-        <a
-            href="tel:+639284067309"
-            class="btn primary"
-        >
-            📞 Call Us
-        </a>
-
-
-        <a
-            href="https://m.me/"
-            target="_blank"
-            class="btn primary"
-        >
-            💬 Messenger
-        </a>
-
-
-        <a
-            href="https://maps.google.com/?q=Polomolok+South+Cotabato"
-            target="_blank"
-            class="btn secondary"
-        >
-            📍 Find Us
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-    <h3>Kyth Cafe</h3>
-
-    <p>
-        Delicious food. Great moments.
-    </p>
-
-    <br>
-
-    <p>
-        © 2026 Kyth Cafe. All Rights Reserved.
-    </p>
-
-</footer>
+    </footer>
 
 
 </body>
+
 </html>
-```
