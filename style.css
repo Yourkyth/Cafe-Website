@@ -1,107 +1,99 @@
-/* =========================================================
-   KYTH CAFE - STYLE.CSS
-   ========================================================= */
-
-
-/* ================= RESET ================= */
+/* =========================
+   RESET
+========================= */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 html {
-    scroll-padding-top: 80px;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #fffaf3;
-    color: #2b2118;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
+    color: #333;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
 }
 
 
-/* ================= NAVBAR ================= */
+/* =========================
+   NAVIGATION
+========================= */
 
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-
-    padding: 18px 5%;
-
+    min-height: 70px;
+    padding: 15px 6%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    gap: 30px;
 
-    background: rgba(255, 250, 243, 0.97);
-
-    z-index: 1000;
-
+    background: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-
-/* LOGO */
-
 .logo {
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 28px;
+    font-weight: 800;
+    color: #3b2416;
     white-space: nowrap;
 }
 
 .logo span {
-    color: #c46b2c;
+    color: #b87935;
 }
-
-
-/* NAVIGATION LIST */
 
 nav ul {
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 30px;
 
     list-style: none;
-
-    gap: 22px;
-
-    margin: 0;
-    padding: 0;
 }
 
-nav ul li {
-    white-space: nowrap;
-}
-
-nav a {
-    text-decoration: none;
-
-    color: #2b2118;
-
+nav ul li a {
+    color: #333;
     font-weight: 600;
     font-size: 16px;
-
     transition: 0.3s;
 }
 
-nav a:hover {
-    color: #c46b2c;
+nav ul li a:hover {
+    color: #b87935;
 }
 
 
-/* ================= HERO ================= */
+/* =========================
+   HERO
+========================= */
 
 .hero {
-    min-height: 100vh;
-
-    padding: 120px 8% 70px;
+    min-height: calc(100vh - 70px);
 
     display: flex;
     align-items: center;
+
+    padding: 80px 6%;
 
     background:
         linear-gradient(
@@ -112,272 +104,259 @@ nav a:hover {
 
     background-size: cover;
     background-position: center;
-
-    color: white;
 }
 
 .hero-content {
-    max-width: 650px;
+    max-width: 700px;
+    color: white;
 }
 
 .hero h1 {
-    font-size: clamp(45px, 7vw, 75px);
-
-    line-height: 1.1;
-
-    margin-bottom: 20px;
+    font-size: clamp(42px, 7vw, 78px);
+    line-height: 1.05;
+    margin-bottom: 25px;
 }
 
 .hero p {
-    font-size: 20px;
-
-    margin-bottom: 30px;
-
-    color: #f5f5f5;
-
     max-width: 600px;
+    font-size: clamp(16px, 2vw, 20px);
+    margin-bottom: 30px;
 }
 
 
-/* ================= BUTTONS ================= */
+/* =========================
+   BUTTONS
+========================= */
 
 .btn {
     display: inline-block;
 
-    padding: 14px 28px;
+    padding: 13px 25px;
+    margin: 5px;
 
-    border-radius: 6px;
+    border-radius: 30px;
 
-    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
 
-    font-weight: bold;
-
-    margin-right: 10px;
-
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
-
-/* PRIMARY BUTTON */
-
-.primary {
-    background: #c46b2c;
-
+.btn.primary {
+    background: #b87935;
     color: white;
 }
 
-.primary:hover {
-    background: #a9521d;
-
-    transform: translateY(-3px);
+.btn.primary:hover {
+    background: #8f5925;
+    transform: translateY(-2px);
 }
 
+.btn.secondary {
+    background: transparent;
+    color: #b87935;
+    border: 2px solid #b87935;
+}
 
-/* SECONDARY BUTTON */
+.hero .btn.secondary {
+    color: white;
+    border-color: white;
+}
 
-.secondary {
-    border: 2px solid white;
-
+.btn.secondary:hover {
+    background: #b87935;
+    border-color: #b87935;
     color: white;
 }
 
-.secondary:hover {
-    background: white;
 
-    color: #2b2118;
-}
-
-
-/* ================= GENERAL SECTION ================= */
+/* =========================
+   GENERAL SECTIONS
+========================= */
 
 section {
-    padding: 90px 8%;
-
-    background: #e4d2b8;
+    width: 100%;
 }
-
-
-/* SECTION TITLE */
 
 .section-title {
     text-align: center;
-
-    margin-bottom: 50px;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    padding: 0 20px;
 }
 
 .section-title h2 {
-    font-size: 40px;
-
+    font-size: clamp(30px, 5vw, 48px);
+    color: #3b2416;
     margin-bottom: 10px;
 }
 
 .section-title p {
     color: #777;
+    font-size: 17px;
 }
 
 
-/* ================= ABOUT ================= */
+/* =========================
+   ABOUT
+========================= */
 
 .about {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 90px 6%;
+
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
-    gap: 50px;
-
     align-items: center;
+    gap: 60px;
 }
 
 .about img {
     width: 100%;
-
     height: 450px;
-
     object-fit: cover;
-
-    border-radius: 12px;
+    border-radius: 20px;
 }
 
 .about-text h2 {
-    font-size: 40px;
-
+    font-size: clamp(32px, 5vw, 48px);
+    color: #3b2416;
     margin-bottom: 20px;
 }
 
 .about-text p {
     color: #666;
-
-    line-height: 1.8;
-
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 17px;
 }
 
 
-/* ================= MENU ================= */
+/* =========================
+   MENU
+========================= */
 
 .menu {
-    background: #f4eadf;
+    padding: 90px 6%;
+    background: #faf7f2;
 }
 
 .menu-grid {
+    max-width: 1200px;
+    margin: auto;
+
     display: grid;
 
     grid-template-columns:
-        repeat(auto-fit, minmax(280px, 1fr));
+        repeat(3, minmax(0, 1fr));
 
-    gap: 25px;
+    gap: 30px;
 }
-
-
-/* FOOD CARD */
 
 .food-card {
     background: white;
-
-    border-radius: 12px;
-
+    border-radius: 18px;
     overflow: hidden;
 
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 
     transition: 0.3s;
 }
 
 .food-card:hover {
-    transform: translateY(-7px);
-
-    box-shadow:
-        0 10px 25px rgba(0, 0, 0, 0.12);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
 }
-
-
-/* FOOD IMAGE */
 
 .food-card img {
     width: 100%;
-
-    height: 390px;
-
+    height: 230px;
     object-fit: cover;
-
-    display: block;
 }
 
-
-/* FOOD INFORMATION */
-
 .food-info {
-    padding: 20px;
+    padding: 22px;
 }
 
 .food-info h3 {
-    font-size: 22px;
-
-    margin-bottom: 8px;
+    color: #3b2416;
+    font-size: 23px;
+    margin-bottom: 10px;
 }
 
 .food-info p {
     color: #777;
-
+    font-size: 15px;
     margin-bottom: 15px;
 }
 
 .price {
-    color: #c46b2c;
-
-    font-weight: bold;
-
-    font-size: 20px;
+    color: #b87935;
+    font-size: 22px;
+    font-weight: 800;
 }
 
 
-/* ================= SPECIAL OFFER ================= */
+/* =========================
+   SPECIAL OFFER
+========================= */
 
 .offer {
-    padding: 80px 8%;
-
+    padding: 80px 6%;
     text-align: center;
 
-    background: #2b2118;
+    background:
+        linear-gradient(
+            rgba(59, 36, 22, 0.9),
+            rgba(59, 36, 22, 0.9)
+        ),
+        url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
 
     color: white;
 }
 
 .offer h2 {
-    font-size: 40px;
-
+    font-size: clamp(32px, 5vw, 50px);
     margin-bottom: 15px;
 }
 
 .offer p {
+    font-size: 18px;
     margin-bottom: 25px;
-
-    color: #ddd;
 }
 
 
-/* ================= GALLERY ================= */
+/* =========================
+   GALLERY
+========================= */
+
+#gallery {
+    padding: 90px 6%;
+}
 
 .gallery {
+    max-width: 1200px;
+    margin: auto;
+
     display: grid;
 
     grid-template-columns:
-        repeat(3, 1fr);
+        repeat(3, minmax(0, 1fr));
 
-    gap: 15px;
+    gap: 20px;
 }
 
 .gallery img {
     width: 100%;
-
-    height: 220px;
+    height: 280px;
 
     object-fit: cover;
 
-    border-radius: 8px;
-
-    display: block;
+    border-radius: 15px;
 
     transition: 0.3s;
 }
@@ -387,221 +366,201 @@ section {
 }
 
 
-/* ================= RESTAURANT INFO ================= */
+/* =========================
+   RESTAURANT INFO
+========================= */
 
 .info {
-    background: #dfc3a5;
+    padding: 80px 6%;
+    background: #faf7f2;
 }
 
 .info-grid {
+    max-width: 1100px;
+    margin: auto;
+
     display: grid;
 
     grid-template-columns:
-        repeat(3, 1fr);
+        repeat(3, minmax(0, 1fr));
 
-    gap: 25px;
-
-    text-align: center;
+    gap: 30px;
 }
 
 .info-card {
     background: white;
+    padding: 35px 25px;
 
-    padding: 35px 20px;
+    text-align: center;
 
-    border-radius: 10px;
+    border-radius: 18px;
 
-    box-shadow:
-        0 5px 15px rgba(0, 0, 0, 0.05);
-
-    transition: 0.3s;
-}
-
-.info-card:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
 }
 
 .info-card .icon {
-    font-size: 40px;
-
+    font-size: 35px;
     margin-bottom: 15px;
 }
 
 .info-card h3 {
+    color: #3b2416;
     margin-bottom: 10px;
+    font-size: 21px;
 }
 
 .info-card p {
     color: #666;
+    word-break: break-word;
 }
 
 
-/* ================= CONTACT ================= */
+/* =========================
+   CONTACT
+========================= */
 
 .contact {
+    padding: 90px 6%;
     text-align: center;
-
-    background: #e4d2b8;
 }
 
-.contact p {
-    color: #666;
-
-    margin-bottom: 20px;
-}
-
-.contact h2 span {
-    color: #c46b2c;
+.contact .section-title h2 span {
+    color: #b87935;
 }
 
 .contact-buttons {
-    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 
-/* CONTACT BUTTONS */
-
-.contact-buttons .primary {
-    background: #c46b2c;
-
-    color: white;
-
-    border: 2px solid #c46b2c;
-}
-
-.contact-buttons .secondary {
-    background: transparent;
-
-    color: #2b2118;
-
-    border: 2px solid #2b2118;
-}
-
-.contact-buttons .secondary:hover {
-    background: #2b2118;
-
-    color: white;
-}
-
-
-/* ================= FOOTER ================= */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
-    background: #1e1712;
-
-    color: white;
+    padding: 45px 6%;
 
     text-align: center;
 
-    padding: 30px;
+    background: #3b2416;
+    color: white;
 }
 
 footer h3 {
-    font-size: 24px;
-
-    margin-bottom: 5px;
+    font-size: 28px;
+    margin-bottom: 8px;
 }
 
 footer p {
-    color: #aaa;
+    color: #ddd;
 }
 
 
-/* =========================================================
+/* =====================================================
    TABLET
-   ========================================================= */
+===================================================== */
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
 
     nav {
-        padding: 18px 4%;
+        padding: 15px 4%;
     }
 
     nav ul {
-        gap: 15px;
+        gap: 18px;
     }
 
-    nav a {
+    nav ul li a {
         font-size: 14px;
     }
 
-    .logo {
-        font-size: 22px;
-    }
-
-    .about {
-        gap: 30px;
-    }
-
-    .gallery {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-}
-
-
-/* =========================================================
-   SMALL TABLET
-   ========================================================= */
-
-@media (max-width: 800px) {
-
-    nav {
-        padding: 16px 4%;
-    }
-
-    nav ul {
-        gap: 10px;
-    }
-
-    nav a {
-        font-size: 13px;
-    }
-
-    .logo {
-        font-size: 20px;
+    .hero {
+        padding: 70px 5%;
     }
 
     .about {
         grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 70px 5%;
     }
 
     .about img {
         height: 400px;
     }
 
+    .menu {
+        padding: 70px 5%;
+    }
+
+    .menu-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .gallery {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
     .info-grid {
         grid-template-columns:
-            repeat(2, 1fr);
+            repeat(2, minmax(0, 1fr));
     }
+
 }
 
 
-/* =========================================================
+/* =====================================================
    MOBILE
-   ========================================================= */
+===================================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
-    /* NAVBAR */
+    /* NAVIGATION */
 
     nav {
-        padding: 16px 5%;
-    }
+        min-height: auto;
 
-    nav ul {
-        display: none;
+        padding: 15px 20px;
+
+        flex-direction: column;
+
+        gap: 12px;
     }
 
     .logo {
-        font-size: 23px;
+        font-size: 25px;
+    }
+
+    nav ul {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        gap: 10px;
+
+        flex-wrap: wrap;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+        padding: 5px;
     }
 
 
     /* HERO */
 
     .hero {
-        padding: 120px 5% 70px;
+        min-height: 80vh;
+
+        padding: 60px 20px;
 
         text-align: center;
 
@@ -613,69 +572,96 @@ footer p {
     }
 
     .hero h1 {
-        font-size: 45px;
+        font-size: 44px;
     }
 
     .hero p {
-        font-size: 17px;
+        font-size: 16px;
     }
 
+    .hero .btn {
+        display: block;
 
-    /* SECTIONS */
+        width: 100%;
+        max-width: 280px;
 
-    section {
-        padding: 70px 5%;
-    }
-
-
-    /* SECTION TITLE */
-
-    .section-title h2 {
-        font-size: 32px;
+        margin: 10px auto;
     }
 
 
     /* ABOUT */
 
     .about {
+        padding: 60px 20px;
+
         grid-template-columns: 1fr;
+
+        gap: 30px;
     }
 
     .about img {
-        height: 350px;
+        height: 280px;
     }
 
-    .about-text h2 {
-        font-size: 32px;
+    .about-text {
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: 15px;
     }
 
 
     /* MENU */
 
+    .menu {
+        padding: 60px 20px;
+    }
+
+    .section-title {
+        margin-bottom: 35px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .section-title p {
+        font-size: 15px;
+    }
+
     .menu-grid {
         grid-template-columns: 1fr;
+
+        gap: 25px;
     }
 
     .food-card img {
-        height: 350px;
+        height: 220px;
     }
 
 
     /* OFFER */
 
     .offer {
-        padding: 70px 5%;
+        padding: 60px 20px;
     }
 
-    .offer h2 {
-        font-size: 32px;
+    .offer p {
+        font-size: 16px;
     }
 
 
     /* GALLERY */
 
+    #gallery {
+        padding: 60px 20px;
+    }
+
     .gallery {
         grid-template-columns: 1fr;
+
+        gap: 15px;
     }
 
     .gallery img {
@@ -685,53 +671,74 @@ footer p {
 
     /* INFO */
 
+    .info {
+        padding: 60px 20px;
+    }
+
     .info-grid {
         grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .info-card {
+        padding: 30px 20px;
     }
 
 
-    /* BUTTONS */
+    /* CONTACT */
 
-    .btn {
-        margin-right: 5px;
+    .contact {
+        padding: 60px 20px;
+    }
 
-        margin-bottom: 10px;
+    .contact-buttons {
+        flex-direction: column;
+    }
+
+    .contact-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 40px 20px;
     }
 
 }
 
 
-/* =========================================================
+/* =====================================================
    VERY SMALL PHONES
-   ========================================================= */
+===================================================== */
 
-@media (max-width: 400px) {
+@media (max-width: 380px) {
 
     .logo {
-        font-size: 20px;
+        font-size: 22px;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
     }
 
     .hero h1 {
-        font-size: 38px;
+        font-size: 36px;
     }
 
     .hero p {
-        font-size: 16px;
-    }
-
-    .btn {
-        display: block;
-
-        width: 100%;
-
-        margin: 8px 0;
+        font-size: 14px;
     }
 
     .food-card img {
-        height: 300px;
+        height: 200px;
     }
 
-    .gallery img {
-        height: 220px;
-    }
 }
